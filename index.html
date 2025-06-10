@@ -18,13 +18,36 @@
 </head>
 <body>
 	<h1>DSA Script</h1>
-	<!-- <script src="./0-prime-number-loop.js"></script> -->
-	<!-- <script src="./1-largest-number-loop.js"></script> -->
-	<!-- <script src="./2-smallest-number-loop.js"></script> -->
-	<!-- <script src="./3-count-negative-number.js"></script> -->
-	<!-- <script src="./4-second-largest-number.js"></script> -->
-	<!-- <script src="./5-star-pattern.js"></script> -->
-	<!-- <script src="./6-count-digit.js"></script> -->
-	<script src="./8-reverse-number.js"></script>
+	<div id="console"></div>
+	<script>
+    // Capture console.log messages and display them on the HTML page
+    (function() {
+        var oldLog = console.log;
+        var consoleDiv = document.getElementById('console');
+
+        console.log = function(message) {
+            oldLog.apply(console, arguments); // Preserving original console.log behavior
+            consoleDiv.innerHTML += '<p>' + message + '</p>';
+        };
+    })();
+</script>
+<!-- <script src="./17-count-special-characters.js"></script> -->
+<!-- <script src="./16-count-spaces.js"></script> -->
+<!-- <script src="./15-count-letters.js"></script> -->
+<!-- <script src="./14-count-words.js"></script> -->
+<!-- <script src="./13-count-consonants.js"></script> -->
+<!-- <script src="./12-count-vowels.js"></script> -->
+<!-- <script src="./09-remove-duplicates.js"></script> -->
+<!-- <script src="./11-factorial.js"></script> -->
+<!-- <script src="./10-fibonacci-series.js"></script> -->
+<!-- <script src="./08-reverse-number.js"></script> -->
+<!-- <script src="./07-pelindrom-number.js"></script> -->
+<!-- <script src="./06-count-digit.js"></script> -->
+<!-- <script src="./05-star-pattern.js"></script> -->
+<!-- <script src="./04-second-largest-number.js"></script> -->
+<!-- <script src="./03-count-negative-number.js"></script> -->
+<!-- <script src="./02-smallest-number-loop.js"></script> -->
+<!-- <script src="./01-largest-number-loop.js"></script> -->
+<!-- <script src="./0-prime-number-loop.js"></script> -->
 </body>
 </html>

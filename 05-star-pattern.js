@@ -5,9 +5,9 @@ for(let i = 0; i < sq; i++) {
 	for(let j = 0; j< sq; j++) {
 		row += " *"
 	}
-	console.log(i + " " + row)
+	console.log(row)
 }
-
+console.log("&nbsp;")
 // 2. Top small to bottom large star pattern
 const tb = 4;
 
@@ -16,9 +16,9 @@ for(let i = 0; i < tb; i++) {
 	for(let j = 0; j <= i; j++) {
 		row += " *"
 	}
-	console.log(i+ " "+ row)
+	console.log(row)
 }
-
+console.log("&nbsp;")
 // 3. Top small to bottom large print j number pattern
 
 const tjb = 5;
@@ -28,9 +28,9 @@ for(let i = 0; i < tjb; i++) {
 	for(let j = 0; j <= i; j++) {
 		row += (j + 1)
 	}
-	console.log(i+ " "+ row)
+	console.log(row)
 }
-
+console.log("&nbsp;")
 // 4. Top small to bottom large print i number pattern
 
 const tib = 5;
@@ -40,9 +40,9 @@ for(let i = 0; i < tib; i++) {
 	for(let j = 0; j <= i; j++) {
 		row += (i + 1)
 	}
-	console.log(i+ " "+ row)
+	console.log(row)
 }
-
+console.log("&nbsp;")
 // 5. Top large to bottom small j number pattern
 
 const tljb = 5
@@ -52,7 +52,7 @@ for(let i = 0; i < tljb; i++) {
 	for(let j = 0; j < (tljb - i); j++) {
 		row += (j + 1)
 	}	
-	console.log(i+ " "+ row)
+	console.log(row)
 }
 
 for(let i = tljb; i > 0; i--) {
@@ -61,10 +61,9 @@ for(let i = tljb; i > 0; i--) {
 		row += (j + 1)
 	}
 
-	console.log(i+ " "+ row)
+	console.log(row)
 }
-
-
+console.log("&nbsp;")
 // 6. top start space to end star pattern
 const tses = 5
 
@@ -77,7 +76,7 @@ for (let i = 0; i < tses; i++) {
             row += "*"
         }
     }
-    console.log(i+ " "+ row)
+    console.log(row)
 }
 
 for (let i = 0; i < tses; i++) {
@@ -88,9 +87,9 @@ for (let i = 0; i < tses; i++) {
     for (let j = 0; j <= i; j++) {
         row += "*"
     }
-    console.log(i+ " "+ row)
+    console.log(row)
 }
-
+console.log("&nbsp;")
 // 7. alternate 1 or 0 pattern
 
 const anum = 5
@@ -106,9 +105,9 @@ for (let i = 0; i < anum; i++) {
             part = "1"
         }
     }
-    console.log(i+ " "+ row)
+    console.log(row)
 }
-
+console.log("&nbsp;")
 // 8. alternate j 1 or 0 pattern
 let partAlt = "1"
 for (let i = 0; i < anum; i++) {
@@ -121,5 +120,5 @@ for (let i = 0; i < anum; i++) {
             partAlt = "1"
         }
     }
-    console.log(i+ " "+ row)
+    console.log(row)
 }
