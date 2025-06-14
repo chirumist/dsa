@@ -1,12 +1,19 @@
 /**
- * @param {character[]} s
- * @return {void} Do not return anything, modify s in-place instead.
- * s = ["h","e","l","l","o"]
- * s = ["H","a","n","n","a","h"]
+ * @param {number[]} nums
+ * @param {number} val
+ * @return {number}
  */
-var val = ["h","e","l","l","o"]
-var reverseString = function(s) {
-    return s
+let nums = [0,1,2,2,3,0,4,2]
+let val = 2
+var removeElement = function(nums, val) {
+    let x=0;
+    for (var i = 0; i < nums.length; i++) {
+        if(nums[i] !== val) {
+            nums[x] = nums[i]
+            x += 1
+        }
+    }
+    return x
 };
-
-console.log(val, reverseString(val))
+console.log(removeElement(nums, val))
+console.log(nums)
