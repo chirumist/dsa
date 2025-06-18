@@ -6,12 +6,12 @@
         let x = arr.length
         for(let i = 0; i < x; i++) {
             let min = i;
-            for (let j = i; j < x; j++) {
-                if(arr[min] > arr[j]) {
+            for (let j = i + 1; j < x; j++) {
+                if(arr[j] < arr[min]) {
                     min = j
                 }
             }
-            if(arr[min] <  arr[i]) {
+            if(arr[min] !==  arr[i]) {
                 [arr[i], arr[min]] = [arr[min], arr[i]]
             }
         }
